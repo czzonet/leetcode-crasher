@@ -1,24 +1,26 @@
-export const twoSum = (nums: number[], target: number) => {
-  let pause = false;
-  let res = [];
+export const twoSum = (nums: number[], target: number): number[] => {
+  let res;
 
   for (let i = 0; i < nums.length; i++) {
-    if (pause) {
+    if (res) {
       break;
     } else {
+      /** 起始值 */
       const from = nums[i];
+      /** 剩余值 */
+      const left = target - from;
       for (let j = i + 1; j < nums.length; j++) {
-        if (pause) {
+        if (res) {
           break;
         } else {
+          /** 结束值 */
           const to = nums[j];
-          from + to == target
-            ? (res.push(i), res.push(j), (pause = true))
-            : null;
+          /** 结束与剩余相等时，即为结果 */
+          to == left ? (res = [i, j]) : null;
         }
       }
     }
   }
 
-  return res;
+  return res as number[];
 };
