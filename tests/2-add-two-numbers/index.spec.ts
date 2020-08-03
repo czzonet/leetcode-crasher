@@ -1,4 +1,4 @@
-import { addTwoNumbers } from ".";
+import { addTwoNumbers } from "../../src/problems/2-add-two-numbers";
 
 test(`
 Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
