@@ -4,7 +4,7 @@ test(`
 Input: "23"
 Output: ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].
 `, () => {
-  expect(letterCombinations("23")).toBe([
+  expect(letterCombinations("23")).toStrictEqual([
     "ad",
     "ae",
     "af",
