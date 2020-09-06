@@ -1,10 +1,8 @@
 import { threeSum } from "./problems/15-3Sum";
+import { test2 } from "./problems/21-Merge-Two-Sorted-Lists";
 
 function main() {
-  console.log("Welcome!");
-  threeSum([-1, 0, 1, 2, -1, -4]);
-  console.log(0);
-
+  test2();
   debugger;
 }
 
