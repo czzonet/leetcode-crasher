@@ -1,0 +1,36 @@
+#  5. Longest Palindromic Substring
+
+Medium
+
+7283
+
+554
+
+Add to List
+
+Share
+
+Given a string **s**, find the longest palindromic substring in **s**. You may assume that the maximum length of **s** is 1000.
+
+**Example 1:**
+
+```
+Input: "babad"
+Output: "bab"
+Note: "aba" is also a valid answer.
+```
+
+**Example 2:**
+
+```
+Input: "cbbd"
+Output: "bb"
+```
+
+Accepted
+
+974,343
+
+Submissions
+
+3,311,494
