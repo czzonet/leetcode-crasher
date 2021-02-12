@@ -1,8 +1,4 @@
-import {
-  addTwoNumbers,
-  getList,
-  plusArr,
-} from "../../src/problems/2-add-two-numbers";
+import { addTwoNumbers, getList } from "../../src/problems/2-add-two-numbers";
 
 test(`
 Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
@@ -22,7 +18,9 @@ Input: [2, 4, 3][5, 6, 4]
 Output: [7, 0, 8]
 Explanation: 342 + 465 = 807.
 `, () => {
-  expect(plusArr([2, 4, 3], [5, 6, 4])).toStrictEqual([7, 0, 8]);
+  expect(addTwoNumbers(getList([2, 4, 3]), getList([5, 6, 4]))).toStrictEqual(
+    getList([7, 0, 8])
+  );
 });
 
 test(`
